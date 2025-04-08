@@ -55,12 +55,6 @@ img {
   max-width: 100%;
 }
 
-@media (min-resolution: 192dpi) {
-  .hero-section {
-    background-image: url(../images/background-image-2x.jpg);
-  }
-}
-
 /* common */
 
 .visually-hidden {
@@ -455,13 +449,24 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background-image.jpg);
+    url(../images/background-image-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 72px 0;
   margin: 0 auto;
   text-align: center;
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background-image-mobile-2x.jpg);
+  }
 }
 
 .hero-section-title {
@@ -481,7 +486,24 @@ img {
 /* Tablet: 768px */
 @media screen and (min-width: 768px) {
   .hero-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background-image-tablet.jpg);
     padding: 112px 0;
+  }
+
+  @media screen and (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/background-image-tablet-2x.jpg);
+    }
   }
 
   .hero-section-title {
@@ -494,7 +516,24 @@ img {
 /*  Desktop: 1158px */
 @media screen and (min-width: 1158px) {
   .hero-section {
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background-image-tablet.jpg);
     padding: 188px 0;
+  }
+
+  @media screen and (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/background-image-tablet-2x.jpg);
+    }
   }
 }
 
