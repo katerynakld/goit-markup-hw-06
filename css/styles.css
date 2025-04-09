@@ -259,10 +259,11 @@ img {
 
 .nav-container {
   display: flex;
+  height: 100%;
   flex-direction: column;
   align-items: flex-start;
   margin: 0;
-  padding: 0 16px;
+  padding: 72px 16px 40px 16px;
 }
 
 .nav-container .close-button {
@@ -275,7 +276,7 @@ img {
 }
 
 .menu-nav {
-  margin-bottom: 168px;
+  margin-bottom: auto;
 }
 
 .nav-menu-list {
@@ -287,7 +288,6 @@ img {
   font-size: 36px;
   line-height: 111%;
   letter-spacing: 0.02em;
-  margin-top: 72px;
 }
 
 .menu-bottom {
